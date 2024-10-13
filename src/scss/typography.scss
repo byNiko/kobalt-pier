@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'pieces-of-eight';
+	src: url(../fonts/pieces_of_eight-webfont.woff2);
+}
+
+
+:root {
+	--ff-heading: 'pieces-of-eight';
+	--ff-body: "Inter", sans-serif;
+	--ff-body: "Inter", sans-serif;
+	--ff-body: "Shadows Into Light", cursive;
+	// --ff-body: "Kaushan Script" , cursive;
+	// --ff-body: "Indie Flower";
+}
+.h1,
+.h2,.h3 {
+	font-family: var(--ff-heading);
+}
+
+.section-title {
+	font-size: 5rem;
+	filter: drop-shadow(2px 2px 5px black);
+	opacity: .9;
+}

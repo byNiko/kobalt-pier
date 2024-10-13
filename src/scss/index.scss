@@ -1,0 +1,38 @@
+/**
+* Pico Docs: https://picocss.com/docs/sass
+* Pico theme color choices:
+* amber, azure, blue, cyan, fuchsia, green, grey, indigo, jade, lime, orange, pink, pumpkin, purple, red, sand, slate, violet, yellow, zinc.
+**/
+
+@use "./variables" as *;
+@use "@picocss/pico/scss/pico" with ($theme-color: "violet",
+  $css-var-prefix: "--",
+  $breakpoints: $bps,
+  $modules: ("content/code": false,
+    "forms/input-color": false,
+    "forms/input-date": false,
+    "forms/input-file": false,
+    "forms/input-range": false,
+    "forms/input-search": false,
+    "components/accordion": false,
+    "components/card": false,
+    "components/dropdown": false,
+    "components/loading": false,
+    "components/modal": false,
+    "components/nav": true,
+    "components/progress": false,
+    "components/tooltip": false,
+    "utilities/accessibility": false,
+    "utilities/reduce-motion": false));
+@use "./wp-defaults";
+@use "./typography";
+@use "./base";
+@use './utilities';
+@use './layout';
+@use "./components";
+
+@use "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss" with ($hamburger-layer-color :white,
+  $hamburger-padding-x: 20px,
+  $hamburger-padding-y: 15px,
+  $hamburger-types : (slider),
+);
