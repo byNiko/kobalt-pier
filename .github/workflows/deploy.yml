@@ -28,5 +28,5 @@ jobs:
           #TARGET: ${{ secrets.REMOTE_TARGET }}
           REMOTE_HOST: "byniko.com"
           REMOTE_USER: "bynikoco"
-          TARGET: "~/test"
+          TARGET: "~/www/hosting/kobaltpier.com/wp-content/themes/kobalt-pier"
           EXCLUDE: ""
