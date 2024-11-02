@@ -28,5 +28,5 @@ jobs:
           #TARGET: ${{ secrets.REMOTE_TARGET }}
           REMOTE_HOST: "byniko.com"
           REMOTE_USER: "bynikoco"
-          TARGET: "/test"
+          TARGET: "~/test"
           EXCLUDE: ""
