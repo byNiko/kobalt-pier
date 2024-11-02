@@ -1994,11 +1994,7 @@ html, body, .page-content, .site-main {
   background-size: cover;
 }
 .site-bg img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 50%;
-     object-position: 0 50%;
+  width: 100%;
 }
 
 .site-main {
