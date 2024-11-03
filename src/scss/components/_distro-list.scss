@@ -1,0 +1,38 @@
+.distro__icons {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:0;
+	margin:0;
+	gap: 1rem;
+}
+
+.distro__item {
+	list-style-type: none;
+position: relative;
+// padding-bottom: 2rem;
+
+	.distro__name{
+		font-size: .8rem;
+		width: min-content;
+		// position: absolute;	
+		line-height: 1.2;
+		text-align: center;
+		left:0;
+		width: 100%;
+		opacity:0;
+		transition: opacity .2s;
+		padding-top: .5rem;
+		// bottom:0;
+		// transform: translatey(100%);
+	}
+	&:hover .distro__name{
+		opacity: 1;
+	}
+}
+.distro__icon {
+	width: 50px;
+	aspect-ratio: 1;
+
+}

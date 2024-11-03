@@ -2034,10 +2034,11 @@ html, body, .page-content, .site-main {
   }
 }
 
-.container {
+.container, .container-wide {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
+  padding-inline: 2rem;
 }
 
 .container-wide {
@@ -2079,6 +2080,7 @@ section > section {
 
 .container-padding {
   padding: 1rem;
+  padding: 2rem;
 }
 
 .border-radius {
@@ -2086,7 +2088,6 @@ section > section {
 }
 
 .dark-background {
-  padding: 2rem;
   margin: auto;
   border-radius: 1rem;
   border: 3px solid green;
@@ -2112,6 +2113,10 @@ section > section {
   .readable-copy, .content p, .logline {
     font-size: 1.5rem;
   }
+}
+
+.pt-3 {
+  padding-top: 1rem;
 }
 
 .sr-only,
@@ -2249,6 +2254,41 @@ section > section {
 .breakdown p {
   font-size: 1rem;
   line-height: 1.2;
+}
+
+.distro__icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+.distro__item {
+  list-style-type: none;
+  position: relative;
+}
+.distro__item .distro__name {
+  font-size: 0.8rem;
+  width: -moz-min-content;
+  width: min-content;
+  line-height: 1.2;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.2s;
+  padding-top: 0.5rem;
+}
+.distro__item:hover .distro__name {
+  opacity: 1;
+}
+
+.distro__icon {
+  width: 50px;
+  aspect-ratio: 1;
 }
 
 /*!

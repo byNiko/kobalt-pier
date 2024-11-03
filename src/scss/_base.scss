@@ -101,8 +101,10 @@ min-height:100%;
 	max-width: 800px;
 	margin: 0 auto;
 	position: relative;
+	padding-inline: 2rem;
 }
 .container-wide {
+	@extend .container;
 	max-width: 1280px;
 }
 
@@ -141,12 +143,12 @@ section > section {
 
 .container-padding {
 	padding: 1rem;
+	padding: 2rem;
 }
 .border-radius {
 	border-radius: .5rem;
 }
 .dark-background {
-    padding: 2rem;
     margin: auto;
     border-radius: 1rem;
     border: 3px solid green;
@@ -176,4 +178,8 @@ section > section {
 
 .content p {
 	@extend .readable-copy;
+}
+
+.pt-3 {
+	padding-top: 1rem;
 }

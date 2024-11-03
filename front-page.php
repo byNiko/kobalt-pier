@@ -23,15 +23,44 @@ get_header();
 				<?php echo wp_get_attachment_image(37, 'full', false, ['class' => 'hero-logo']); ?>
 			</div>
 			<!-- test -->
-			<div class="container container">
+			 <div class="container">
+			 <div class="distro blur-background dark-background border-radius ">
+				<h3 class="pt-3">Available On:</h3>
+					<ul class="distro__icons">
+						<?php
+						$distro = get_field('distro_list', 'options');
+						foreach ($distro as $item):
+						?>
+							<li class="distro__item">
+								<a class="distro__link" href="<?= $item['url']; ?>">
+									<img src="<?= $item['icon']; ?>" alt="" class="distro__icon">
+								</a>
+								<div class="distro__name">
+									<?= $item['name']; ?>
+								</div>
+							</li>
+						<?php
+						endforeach;
+						?>
+					</ul>
+				</div>
+			 </div>
+			<div class="container">
 				<div class="logline blur-background dark-background border-radius container-padding"> <?= get_field('logline', 'options'); ?>
 				</div>
-				<div class="cta-wrapper d-none button-group">
+			</div>
+			<div class="container">
+				
+				
+			<div class="cta-wrapper  button-group d-none">
+					
+					<!-- <iframe src="https://podcasters.spotify.com/pod/show/kobalt-pier/embed/episodes/Ep--1---The-Northern-Route-e2phdfl/a-abitot0" height="102px" width="400px" frameborder="0" scrolling="no"></iframe> -->
 					<button class="button-primary">Purchase</button>
 					<button class="button-primary">Play Trailer</button>
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<section class="text-content">
 		<section class="container grid">
@@ -68,7 +97,7 @@ get_header();
 				<?= get_field('credits', 'options'); ?>
 			</div>
 		</section>
-		
+
 	</section>
 </main><!-- #main -->
 <?php
