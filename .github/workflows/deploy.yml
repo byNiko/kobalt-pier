@@ -23,10 +23,8 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc -i --delete"
           SOURCE: ""
-          #REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          #REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
           #TARGET: ${{ secrets.REMOTE_TARGET }}
-          REMOTE_HOST: "byniko.com"
-          REMOTE_USER: "bynikoco"
           TARGET: "~/www/hosting/kobaltpier.com/wp-content/themes/kobalt-pier"
           EXCLUDE: ""
