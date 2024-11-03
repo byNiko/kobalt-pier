@@ -183,3 +183,20 @@ section > section {
 .pt-3 {
 	padding-top: 1rem;
 }
+
+.preview-container {
+	padding: 2rem;
+	// @extend .dark-background;
+	border:none;
+	iframe {
+		margin-top: 2rem;
+		width: 100%;
+		max-width: 400px;
+		margin-inline: auto;
+		height: 100px;
+		box-shadow: 1px 0px 2rem green;
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+}

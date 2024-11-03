@@ -23,9 +23,9 @@ get_header();
 				<?php echo wp_get_attachment_image(37, 'full', false, ['class' => 'hero-logo']); ?>
 			</div>
 			<!-- test -->
-			 <div class="container-padding">
-			 <div class="distro blur-background dark-background border-radius ">
-				<h3 class="pt-3">Available On:</h3>
+			<div class="container-padding">
+				<div class="distro blur-background dark-background border-radius ">
+					<h3 class="pt-3">Available On:</h3>
 					<ul class="distro__icons">
 						<?php
 						$distro = get_field('distro_list', 'options');
@@ -44,16 +44,22 @@ get_header();
 						?>
 					</ul>
 				</div>
-			 </div>
+			</div>
+
+			<div class="container preview-container">
+				<iframe src="https://podcasters.spotify.com/pod/show/kobalt-pier/embed/episodes/Ep--1---The-Northern-Route-e2phdfl/a-abitot0" frameborder="0" scrolling="no"></iframe>
+				<iframe src="https://podcasters.spotify.com/pod/show/kobalt-pier/embed/episodes/Ep--2--The-World-Famous-Pier-e2phe7j/a-abitot1" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+				<iframe src="https://podcasters.spotify.com/pod/show/kobalt-pier/embed/episodes/Ep--3--The-Blue-Pool-e2pheab/a-abitorl" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+			</div>
 			<div class="container">
 				<div class="logline blur-background dark-background border-radius container-padding"> <?= get_field('logline', 'options'); ?>
 				</div>
 			</div>
 			<div class="container">
-				
-				
-			<div class="cta-wrapper  button-group d-none">
-					
+
+
+				<div class="cta-wrapper  button-group d-none">
+
 					<!-- <iframe src="https://podcasters.spotify.com/pod/show/kobalt-pier/embed/episodes/Ep--1---The-Northern-Route-e2phdfl/a-abitot0" height="102px" width="400px" frameborder="0" scrolling="no"></iframe> -->
 					<button class="button-primary">Purchase</button>
 					<button class="button-primary">Play Trailer</button>
