@@ -2259,11 +2259,13 @@ section > section {
 .distro__icons {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
   gap: 1rem;
+  padding-inline: 2rem;
 }
 
 .distro__item {

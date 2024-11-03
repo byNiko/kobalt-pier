@@ -23,7 +23,7 @@ get_header();
 				<?php echo wp_get_attachment_image(37, 'full', false, ['class' => 'hero-logo']); ?>
 			</div>
 			<!-- test -->
-			 <div class="container">
+			 <div class="container-padding">
 			 <div class="distro blur-background dark-background border-radius ">
 				<h3 class="pt-3">Available On:</h3>
 					<ul class="distro__icons">
