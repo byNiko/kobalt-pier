@@ -2126,13 +2126,22 @@ section > section {
 .preview-container iframe {
   margin-top: 2rem;
   width: 100%;
-  max-width: 400px;
-  margin-inline: auto;
   height: 100px;
   box-shadow: 1px 0px 2rem green;
 }
+@media (min-width: 768px) {
+  .preview-container iframe {
+    max-width: 400px;
+    width: 100%;
+    margin-inline: auto;
+  }
+}
 .preview-container iframe:first-of-type {
   margin-top: 0;
+}
+
+.logo-wrapper {
+  max-width: 75%;
 }
 
 .sr-only,
@@ -2287,6 +2296,8 @@ section > section {
 .distro__item {
   list-style-type: none;
   position: relative;
+  padding-bottom: 1.5ex;
+  margin-bottom: 1.5ex;
 }
 .distro__item .distro__name {
   font-size: 0.8rem;
@@ -2299,6 +2310,10 @@ section > section {
   opacity: 0;
   transition: opacity 0.2s;
   padding-top: 0.5rem;
+  position: absolute;
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: center;
 }
 .distro__item:hover .distro__name {
   opacity: 1;

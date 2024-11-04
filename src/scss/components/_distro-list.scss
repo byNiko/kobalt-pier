@@ -13,12 +13,12 @@
 .distro__item {
 	list-style-type: none;
 position: relative;
-// padding-bottom: 2rem;
+padding-bottom: 1.5ex;
+margin-bottom: 1.5ex;
 
 	.distro__name{
 		font-size: .8rem;
 		width: min-content;
-		// position: absolute;	
 		line-height: 1.2;
 		text-align: center;
 		left:0;
@@ -26,8 +26,10 @@ position: relative;
 		opacity:0;
 		transition: opacity .2s;
 		padding-top: .5rem;
-		// bottom:0;
-		// transform: translatey(100%);
+		position: absolute;
+		text-wrap: nowrap;
+		display: flex;
+		justify-content: center;
 	}
 	&:hover .distro__name{
 		opacity: 1;
