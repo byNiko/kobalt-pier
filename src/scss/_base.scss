@@ -2,6 +2,7 @@
 html,body, .page-content,.site-main {
 	height: 100%;
 	font-family: var(--ff-body);
+	--font-size: 18px;
 }
 
 
@@ -171,7 +172,7 @@ section > section {
 }
 
 .readable-copy {
-	font-size: 1em;
+	font-size: 1.6rem;
 	@include bp(md){
 	font-size: 1.5rem;
 }

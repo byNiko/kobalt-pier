@@ -1948,6 +1948,7 @@ aside li [role=button] {
 html, body, .page-content, .site-main {
   height: 100%;
   font-family: var(--ff-body);
+  --font-size: 18px;
 }
 
 .site-container {
@@ -2122,7 +2123,7 @@ section > section {
 }
 
 .readable-copy, .content p, .logline {
-  font-size: 1em;
+  font-size: 1.6rem;
 }
 @media (min-width: 768px) {
   .readable-copy, .content p, .logline {
