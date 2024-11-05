@@ -1940,7 +1940,7 @@ aside li [role=button] {
 }
 
 .section-title {
-  font-size: 5rem;
+  font-size: clamp(2rem, 18vw, 5rem);
   filter: drop-shadow(2px 2px 5px black);
   opacity: 0.9;
 }
@@ -2248,7 +2248,9 @@ section > section {
 }
 
 .character--items {
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .character--items {
