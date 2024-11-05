@@ -1,3 +1,4 @@
+@use './abstracts' as *;
 @font-face {
 	font-family: 'pieces-of-eight';
 	src: url(../fonts/pieces_of_eight-webfont.woff2);
@@ -15,6 +16,19 @@
 .h1,
 .h2,.h3 {
 	font-family: var(--ff-heading);
+}
+
+.header-body-font {
+	font-family: var(--ff-body);
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    filter: drop-shadow(2px 4px 6px black);
+@include bp(md){
+	font-size: 1rem;	
+}
+
 }
 
 .section-title {

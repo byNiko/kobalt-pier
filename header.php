@@ -1,5 +1,5 @@
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> data-theme="dark">
 
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
@@ -21,9 +21,9 @@
 		<?php echo wp_get_attachment_image($bg_id, 'full');?>
 	</div>
 	<div id="page" class="site-container">
-		<!-- <header class="site-header" id="site-header">
+		<header class="site-header d-none" id="site-header">
 			<div id="site-navigation" class="container">
-				<a class="brand navbar-item" href="<?php echo site_url(); ?>">
+				<a class="brand navbar-item d-none" href="<?php echo site_url(); ?>">
 					<?php
 					$logo = wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full');
 					if (has_custom_logo()) : echo '<img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
@@ -49,7 +49,6 @@
 					);
 					?>
 				</nav>
-				</nav>
 			</div>
-		</header> -->
+		</header> 
 		<section class="page-content">

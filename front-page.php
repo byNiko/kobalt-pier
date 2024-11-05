@@ -25,7 +25,7 @@ get_header();
 			<!-- test -->
 			<div class="container-padding">
 				<div class="distro blur-background dark-background border-radius ">
-					<h3 class="pt-3">Available On:</h3>
+					<h3 class="pt-3 header-body-font">Listen On:</h3>
 					<ul class="distro__icons">
 						<?php
 						$distro = get_field('distro_list', 'options');
@@ -45,16 +45,18 @@ get_header();
 					</ul>
 				</div>
 			</div>
-
-			<div class="container preview-container">
-				<iframe src="https://podcasters.spotify.com/pod/show/kobalt-pier/embed/episodes/Ep--1---The-Northern-Route-e2phdfl/a-abitot0" frameborder="0" scrolling="no"></iframe>
-				<iframe src="https://podcasters.spotify.com/pod/show/kobalt-pier/embed/episodes/Ep--2--The-World-Famous-Pier-e2phe7j/a-abitot1" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
-				<iframe src="https://podcasters.spotify.com/pod/show/kobalt-pier/embed/episodes/Ep--3--The-Blue-Pool-e2pheab/a-abitorl" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
-			</div>
 			<div class="container">
 				<div class="logline blur-background dark-background border-radius container-padding"> <?= get_field('logline', 'options'); ?>
 				</div>
 			</div>
+
+			<div class="container preview-container">
+				
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1vU2K5tcxgfLEp8NSxhzrh?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6gkR5DfUYSRhzBFvU8awQq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+					<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3c1SzFV8RFpj7AKZgDVQCF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				</div>
+		
 			<div class="container">
 
 
