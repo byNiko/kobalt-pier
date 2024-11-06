@@ -135,9 +135,13 @@ function byniko_scripts() {
 		array(),
 		$asset_file['version']
 	);
+	// $font_url = "//fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kaushan+Script&family=Shadows+Into+Light&display=swap";
+	$font_url = "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap";
+	// $font_url = "https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap";
+
 	wp_enqueue_style(
-		'byniko-google-fonts',
-		"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kaushan+Script&family=Shadows+Into+Light&display=swap",
+		'byniko-google-fons',
+		$font_url,
 		array(),
 		"1.0"
 	);

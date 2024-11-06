@@ -1915,9 +1915,7 @@ aside li [role=button] {
 }
 :root {
   --ff-heading: "pieces-of-eight";
-  --ff-body: "Inter", sans-serif;
-  --ff-body: "Inter", sans-serif;
-  --ff-body: "Shadows Into Light", cursive;
+  --ff-body:"Montserrat", "Playwrite GB S", cursive;
 }
 
 .h1,
