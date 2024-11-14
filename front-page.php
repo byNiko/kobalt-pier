@@ -50,7 +50,7 @@ get_header();
 				</div>
 			</div>
 
-			<div class="container preview-container">
+			<div class="container preview-container d-none">
 				
 			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1vU2K5tcxgfLEp8NSxhzrh?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 				<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6gkR5DfUYSRhzBFvU8awQq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
