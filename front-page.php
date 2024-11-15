@@ -50,6 +50,10 @@ get_header();
 				</div>
 			</div>
 
+			<div class="container preview-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=JtRa3900DnGOLrPJ&amp;list=PLPQAiEppyhfqPrIkvTur00xDiu8ylCEsN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+
 			<div class="container preview-container d-none">
 				
 			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1vU2K5tcxgfLEp8NSxhzrh?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
