@@ -1,52 +1,64 @@
 @use './abstracts' as *;
-html,body, .page-content,.site-main {
+
+html,
+body,
+.page-content,
+.site-main {
 	height: 100%;
 	font-family: var(--ff-body);
 	--font-size: 18px;
 }
 
 
-.site-container {  
+.site-container {
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
 	gap: 0px 0px;
-min-height:100%;
+	min-height: 100%;
 	grid-template-columns: 100%;
 	grid-auto-flow: row;
 	grid-template-areas:
-	  "header"
-	  "body"
-	  "footer";
-  }
-  
-  .site-header { grid-area: header; }
-  
-  .page-content { 
-	grid-area: body; 
+		"header"
+		"body"
+		"footer";
+}
+
+.site-header {
+	grid-area: header;
+}
+
+.page-content {
+	grid-area: body;
 	min-height: 100%;
 }
-  
-  .site-footer { grid-area: footer; }
-  
+
+.site-footer {
+	grid-area: footer;
+}
+
 
 .menu-toggle {
-	display:none;
+	display: none;
 }
+
 .site-description {
 	display: none;
 }
 
-.site-branding{
+.site-branding {
 	width: 250px;
+
 	img {
 		width: 100%;
 	}
 }
+
 .main-navigation {
 	.menu {
 		list-style-type: none;
 		display: flex;
 	}
+
 	a {
 		text-decoration: none;
 	}
@@ -56,6 +68,7 @@ min-height:100%;
 	position: fixed;
 	inset: 0;
 	background-size: cover;
+
 	img {
 		width: 100%;
 	}
@@ -68,16 +81,17 @@ min-height:100%;
 .landing-section {
 	padding-top: 2em;
 	position: relative;
-	
+
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	min-height: 80vh;
-	
-	@include bp(md){
+
+	@include bp(md) {
 		min-height: 100vh;
 	}
 }
+
 .hero {
 	width: 100%;
 	// position: absolute;
@@ -88,12 +102,14 @@ min-height:100%;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-    gap: 2rem;
+	gap: 2rem;
+
 	.hero-logo {
 		max-width: 1280px;
 		width: 95%;
 		filter: drop-shadow(2px 4px 6px black);
-		@include bp(md){
+
+		@include bp(md) {
 			width: 60%;
 		}
 	}
@@ -105,6 +121,7 @@ min-height:100%;
 	position: relative;
 	padding-inline: 2rem;
 }
+
 .container-wide {
 	@extend .container;
 	max-width: 1280px;
@@ -115,28 +132,31 @@ min-height:100%;
 	padding-bottom: 2rem;
 	position: relative;
 	z-index: 1;
+
 	&:before {
 		background-size: cover;
 		background-image: url(../images/background.jpg);
 		mask-image: linear-gradient(to bottom, transparent, black 10%);
-		mask-size: cover;;
+		mask-size: cover;
+		;
 		position: absolute;
-		inset:0;
-		content:'';
+		inset: 0;
+		content: '';
 		z-index: 0;
 		opacity: .8;
-	// background: linear-gradient(to bottom, transparent 5%, var(--background-color)), 
-	// url(../images/background.jpg);
+		// background: linear-gradient(to bottom, transparent 5%, var(--background-color)), 
+		// url(../images/background.jpg);
 	}
-	
+
 }
 
-section, p:last-of-type {
+section,
+p:last-of-type {
 	margin-bottom: 0;
 }
 
 section > section {
-	padding-top:4rem;
+	padding-top: 4rem;
 }
 
 .blur-background {
@@ -147,16 +167,19 @@ section > section {
 	padding: 1rem;
 	padding: 2rem;
 }
+
 .border-radius {
 	border-radius: .5rem;
 }
+
 .dark-background {
-    margin: auto;
-    border-radius: 1rem;
-    border: 3px solid green;
-    background-image: linear-gradient(-135deg, #122913, rgba(18, 41, 19, 0.4039215686));
-    -webkit-backdrop-filter: hue-rotate(45deg);
-    backdrop-filter: hue-rotate(45deg), blur(6px);;
+	margin: auto;
+	border-radius: 1rem;
+	border: 3px solid green;
+	background-image: linear-gradient(-135deg, #122913, rgba(18, 41, 19, 0.4039215686));
+	-webkit-backdrop-filter: hue-rotate(45deg);
+	backdrop-filter: hue-rotate(45deg), blur(6px);
+	;
 }
 
 .logline {
@@ -173,9 +196,10 @@ section > section {
 
 .readable-copy {
 	font-size: 1.6rem;
-	@include bp(md){
-	font-size: 1.5rem;
-}
+
+	@include bp(md) {
+		font-size: 1.5rem;
+	}
 }
 
 .content p {
@@ -187,27 +211,24 @@ section > section {
 }
 
 .preview-container {
+	
+		max-width: 500px;
+		width: 100%;
+		margin-inline: auto;
+
 	padding: 2rem;
 	// @extend .dark-background;
-	border:none;
+	border: none;
+
 	iframe {
 		box-shadow: 1px 0px 2rem green;
 		margin-top: 2rem;
+		width: 100%;
+		height: 100%;
+
 		&:first-of-type {
 			margin-top: 0;
 		}
-	}
-	iframes {
-		
-		width:100%;
-		height: 100px;
-		box-shadow: 1px 0px 2rem green;
-		@include bp(md){
-			max-width: 400px;
-			width: 100%;
-		margin-inline: auto;
-		}
-		
 	}
 }
 

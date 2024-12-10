@@ -50,8 +50,11 @@ get_header();
 				</div>
 			</div>
 
-			<div class="container preview-container">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=JtRa3900DnGOLrPJ&amp;list=PLPQAiEppyhfqPrIkvTur00xDiu8ylCEsN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<div class="container preview-container" data-video_id="Rp-3Uo6jpEA">	
+			</div>
+			<div class="container preview-container" data-video_id="vA4Vj64fudA">	
+			</div>
+			<div class="container preview-container" data-video_id="NEpVuyvOVvI">	
 			</div>
 
 			<div class="container preview-container d-none">

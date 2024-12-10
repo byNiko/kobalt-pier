@@ -1943,7 +1943,10 @@ aside li [role=button] {
   opacity: 0.9;
 }
 
-html, body, .page-content, .site-main {
+html,
+body,
+.page-content,
+.site-main {
   height: 100%;
   font-family: var(--ff-body);
   --font-size: 18px;
@@ -2079,7 +2082,8 @@ html, body, .page-content, .site-main {
   opacity: 0.8;
 }
 
-section, p:last-of-type {
+section,
+p:last-of-type {
   margin-bottom: 0;
 }
 
@@ -2134,27 +2138,20 @@ section > section {
 }
 
 .preview-container {
+  max-width: 500px;
+  width: 100%;
+  margin-inline: auto;
   padding: 2rem;
   border: none;
 }
 .preview-container iframe {
   box-shadow: 1px 0px 2rem green;
   margin-top: 2rem;
+  width: 100%;
+  height: 100%;
 }
 .preview-container iframe:first-of-type {
   margin-top: 0;
-}
-.preview-container iframes {
-  width: 100%;
-  height: 100px;
-  box-shadow: 1px 0px 2rem green;
-}
-@media (min-width: 768px) {
-  .preview-container iframes {
-    max-width: 400px;
-    width: 100%;
-    margin-inline: auto;
-  }
 }
 
 .logo-wrapper {
@@ -2310,6 +2307,11 @@ section > section {
   margin: 0;
   gap: 1rem;
   padding-inline: 2rem;
+}
+@media (min-width: 350px) {
+  .distro__icons {
+    flex-wrap: nowrap;
+  }
 }
 
 .distro__item {

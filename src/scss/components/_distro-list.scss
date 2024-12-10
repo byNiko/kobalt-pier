@@ -1,3 +1,4 @@
+@use '../abstracts' as *;
 .distro__icons {
 	list-style-type: none;
 	display: flex;
@@ -8,6 +9,9 @@
 	margin:0;
 	gap: 1rem;
 	padding-inline: 2rem;
+	@media (min-width:350px) {
+		flex-wrap: nowrap;
+	}
 }
 
 .distro__item {
