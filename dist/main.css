@@ -2358,7 +2358,7 @@ section > section {
   align-items: center;
 }
 .laurels-wrapper .laurel {
-  max-width: 200px;
+  width: min(200px, 46%);
 }
 .laurels-wrapper .laurel__image__wrapper {
   flex: 1;
