@@ -2345,6 +2345,37 @@ section > section {
   aspect-ratio: 1;
 }
 
+.laurels-container {
+  padding-inline: 1rem;
+  width: 100%;
+}
+
+.laurels-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+.laurels-wrapper .laurel {
+  max-width: 200px;
+}
+.laurels-wrapper .laurel__image__wrapper {
+  flex: 1;
+}
+.laurels-wrapper .laurel__image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.laurels-wrapper .laurel__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers

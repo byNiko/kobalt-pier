@@ -1,0 +1,39 @@
+.laurels-container {
+	padding-inline: 1rem;
+	width: 100%;
+}
+.laurels-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	gap: 1rem;
+	align-items: center;
+		// margin-bottom: 1rem;
+	.laurel {
+		// flex: 1;;
+		max-width: 200px;
+		// flex:.5;
+		// min-width: 150px;
+		// display: flex;
+		
+		// &__text {
+		// 	margin-left: 1rem;
+		// }
+	}
+	.laurel__image__wrapper {
+		
+		flex: 1;
+		// min-width: 250px;
+	}
+	.laurel__image {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

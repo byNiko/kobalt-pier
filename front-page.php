@@ -22,6 +22,27 @@ get_header();
 			<div class="logo-wrapper">
 				<?php echo wp_get_attachment_image(37, 'full', false, ['class' => 'hero-logo']); ?>
 			</div>
+			<section class="laurels-container">
+			<div class="laurels-wrapper">
+				<?php 
+				$laurels = get_field('laurels', 'options'); 
+				foreach ($laurels as $item):
+					?>
+					<div class="laurel">
+						<div class="laurel__image__wrapper">
+							<?php
+							echo wp_get_attachment_image($item['image']['id'], 'medium', false, ['class' => 'laurel__image']);	
+							?>
+						</div>
+						<div class="laurel__text">
+							<? //= $item['title']; ?>
+						</div>
+					</div>
+					<?php
+				endforeach;
+				?>  
+			</div>
+		</section>
 			<!-- test -->
 			<div class="container-padding">
 				<div class="distro blur-background dark-background border-radius ">
@@ -112,6 +133,7 @@ get_header();
 				<?= get_field('credits', 'options'); ?>
 			</div>
 		</section>
+		
 
 	</section>
 </main><!-- #main -->
